@@ -28,7 +28,6 @@ class Example {
     onMessage() {
         if (message.attachments.length > 0) {
             message.channel.send(`${message.author} sent an image!`);
-            message.channel.send('This constitutes revelry and merriment and is strictly outlawed!')
             message.delete();
         } 
     };
